@@ -1,12 +1,13 @@
-import { NavBar } from "../components/NavBar"
-
+import { Banner, Categories, NavBar } from "../components"
 
 export const Home = () => {
     return (
-        <div>
+        <>
 
-            <NavBar title="RecipeApp"/>
+            <NavBar title="Recipe" complementTitle="App" />
+            <Banner />
+            <Categories />
 
-        </div>
+        </>
     )
 }

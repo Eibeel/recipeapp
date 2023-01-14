@@ -1,0 +1,24 @@
+.cards_container {
+    align-items: center;
+    justify-content: center;
+    gap: .875rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 12.5rem 1.625rem auto;
+    height: 12.5rem;
+    width: 23.5rem;
+}
+
+.card_container__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: $bodyCardColor;
+    box-shadow: $shadowCard;
+    width: 7.125rem;
+    height: 5.75rem;
+    font-size: 14px;
+    color: $titleRecipeColor;
+    border-radius: 10px;
+}

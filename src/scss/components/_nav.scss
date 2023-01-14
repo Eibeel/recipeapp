@@ -1,0 +1,31 @@
+.nav {
+    background: $baseColor;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    height: 4.375rem;
+    width: 26.75rem;
+    padding: .875rem 2rem .875rem 4.375rem;
+    box-shadow: 0 3px 6px $boxShadow;
+
+    .nav__title_container {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav__title_container__nav__recipe {
+        color: $titleRecipeColor;
+        font-family: $fontMonsterClubhouse;
+        font-size: 40px;
+        font-weight: 400;
+        letter-spacing: 1.15px;
+    }
+
+    .nav__title_container__nav__app {
+        color: $titleComplementColor;
+        font-family: $fontPoppins;
+        font-size: 30px;
+        font-weight: 400;
+        letter-spacing: .86px;
+    }
+}

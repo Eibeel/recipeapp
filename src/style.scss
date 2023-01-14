@@ -1,15 +1,10 @@
-/* utils */
-@use './scss/utils/variables';
-
 /* base */
-@use './scss/base/reset';
-@use './scss/base/typography';
-
-
-/* layout */
-
+@import "./scss/base/variables";
+@import "./scss/base/base";
 
 /* components */
-
-
-/* pages */
+@import "./scss/components/banner";
+@import "./scss/components/categories";
+@import "./scss/components/footer";
+@import "./scss/components/nav";
+@import "./scss/components/recipeCard";
