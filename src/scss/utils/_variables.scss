@@ -1,0 +1,14 @@
+@use '../base/typography';
+
+:root {
+    /* fonts */
+    $fontPoppins: 'Poppins', sans-serif;
+    $fontPoppins: 'MonsterClubhouse', sans-serif;
+
+    /* colors */
+    $baseColor: #fff;
+    $titleColor: #D84A4A;
+    $bodyCardColor: #E9F1FA;
+    $bgFooterColor: #C2E3F3;
+    $textColor: #425966;
+}
