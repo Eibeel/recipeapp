@@ -1,0 +1,51 @@
+.container_recipe_image {
+    display: flex;
+    justify-content: center;
+    width: 11.25rem;
+    z-index: 999;
+    position: relative;
+    margin: 2rem 0  -52px;
+}
+
+.recipe_image {
+    height: 106px;
+    width: 110px;
+}
+
+.recipe_container {
+    background: $bodyCardColor;
+    box-shadow: $shadowCard;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 11.25rem;
+    height: 11.375rem;
+    border-radius: 10px;
+    position: relative;
+}
+
+.recipe_title {
+    color: $titleComplementColor;
+    font-size: 20px;
+    letter-spacing: -0.4px;
+}
+
+.title_complement {
+    font-family: "MonsterClubhouse";
+}
+
+.recipe_info {
+    border: dashed 1px darkgreen;
+}
+
+.recipe_rating {
+    display: flex;
+    justify-content: space-between;
+    border: dashed 1px darkorange;
+}
+
+.recipe_rating__icons {
+    display: flex;
+    justify-content: center;
+}

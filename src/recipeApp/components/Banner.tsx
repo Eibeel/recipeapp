@@ -10,7 +10,6 @@ export const Banner = () => {
                 <h1 className='slogan_container__firstText'>Recetas</h1>
                 <h1 className='slogan_container__secondText'>para todos</h1>
             </div>
-
         </>
     )
 }
