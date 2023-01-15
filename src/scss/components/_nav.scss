@@ -44,8 +44,9 @@
     }
 
     .nav_sections {
-        display: flex;
+        align-items: center;
         column-gap: 2.875rem;
+        display: flex;
         padding: 0 4rem;
     }
 }
