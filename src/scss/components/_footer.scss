@@ -1,0 +1,21 @@
+.container_footer {
+    align-items: center;
+    background: $bgFooterColor;
+    display: flex;
+    justify-content: center;
+    margin: 3rem 0 0;
+    height: 4.375rem;
+    width: 26.75rem;
+}
+
+.container_sponsor {
+    width: fit-content;
+    height: 106px;
+}
+
+.container_text {
+    color: $titleRecipeColor;
+    font-family: "MonsterClubhouse";
+    font-size: 23px;
+    font-weight: 400;
+}

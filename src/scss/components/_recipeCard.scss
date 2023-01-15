@@ -1,10 +1,23 @@
+.cardsRecipes {
+    column-gap: 1.5rem;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    overflow-x: scroll;
+    width: 100vw;
+}
+
+.cardsRecipes::-webkit-scrollbar {
+    display: none;
+}
+
 .container_recipe_image {
     display: flex;
     justify-content: center;
     width: 11.25rem;
     z-index: 999;
     position: relative;
-    margin: 2rem 0  -52px;
+    margin: 0 0 -52px;
 }
 
 .recipe_image {
@@ -18,11 +31,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
+    row-gap: 3rem;
     width: 11.25rem;
     height: 11.375rem;
     border-radius: 10px;
     position: relative;
+    padding: 5.25rem .5rem .75rem;
 }
 
 .recipe_title {
@@ -35,17 +50,17 @@
     font-family: "MonsterClubhouse";
 }
 
-.recipe_info {
-    border: dashed 1px darkgreen;
-}
-
 .recipe_rating {
+    font-size: 17px;
     display: flex;
+    width: 100%;
     justify-content: space-between;
-    border: dashed 1px darkorange;
+    align-items: center;
 }
 
 .recipe_rating__icons {
     display: flex;
-    justify-content: center;
+    height: 1.5rem;
+    align-items: center;
+    column-gap: 4px;
 }
