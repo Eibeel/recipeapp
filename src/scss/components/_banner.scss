@@ -1,6 +1,5 @@
 .banner_container {
     position: relative;
-    width: 100vw;
     z-index: -1;
 }
 
@@ -8,7 +7,7 @@
     height: 14.625rem;
     object-fit: cover;
     position: absolute;
-    width: 26.75rem;
+    width: 100%;
 }
 
 .slogan_container {
@@ -31,4 +30,33 @@
     margin: 0 auto;
     font-weight: 400;
     letter-spacing: 0px;
+}
+
+@media (min-width: 768px) {
+    .banner_container__img {
+        height: 250px;
+    }
+
+    .slogan_container {
+        padding: 3.125rem 7.5rem;
+    }
+
+    .slogan_container__firstText {
+        font-size: 74px;
+    }
+
+    .slogan_container__secondText {
+        font-size: 67px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .banner_container__img {
+        height: 416px;
+        object-fit: cover;
+    }
+
+    .slogan_container {
+        padding: 8.375rem 16.375rem;
+    }
 }

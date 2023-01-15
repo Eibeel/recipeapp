@@ -19,3 +19,36 @@
     font-size: 23px;
     font-weight: 400;
 }
+
+@media (min-width: 768px) {
+    .container_footer {
+        margin-top: 5.375rem;
+        width: 100vw;
+    }
+
+    .container_sponsor {
+        width: 380px;
+        height: 175px;
+    }
+
+    .container_text {
+        font-size: 38px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .container_footer {
+        column-gap: 7.875rem;
+        margin-top: 10rem;
+        width: 100vw;
+    }
+
+    .container_sponsor {
+        width: 536px;
+        height: 248px;
+    }
+
+    .container_text {
+        font-size: 56px;
+    }
+}

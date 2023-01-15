@@ -6,7 +6,7 @@
     flex-wrap: wrap;
     margin: 12.5rem 1.625rem auto;
     height: 12.5rem;
-    width: 23.5rem;
+    width: fit-content;
 }
 
 .card_container__info {
@@ -21,4 +21,22 @@
     font-size: 14px;
     color: $titleRecipeColor;
     border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+    .cards_container {
+        height: auto;
+        margin: 13.625rem auto 1.625rem;
+        column-gap: .75rem; 
+    }
+
+    .card_container__info {
+        width: 6.625rem;
+    }
+}
+
+@media (min-width: 1280px) {
+    .cards_container {
+        display: none;
+    }
 }

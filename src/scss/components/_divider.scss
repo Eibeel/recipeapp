@@ -2,8 +2,21 @@
     display: flex;
     justify-content: center;
     color: $titleComplementColor;
-    width: 100vw;
     margin: 1.75rem auto;
     font-size: 54px;
     font-family: 'MonsterClubhouse';
+}
+
+@media (min-width: 768px) {
+    .divider {
+        margin: 1.75rem 4.375rem ;
+        justify-content: flex-start;
+    }
+}
+
+@media (min-width: 1280px) {
+    .divider {
+        margin: 27.75rem 4.375rem 1.75rem;
+        justify-content: flex-start;
+    }
 }
