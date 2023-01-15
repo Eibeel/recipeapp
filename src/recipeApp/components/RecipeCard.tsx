@@ -9,14 +9,12 @@ type Props = {
     imgHealth: string;
     title: string;
     titleComplement: string;
-    id: number;
-    servings: number;
-    time: number;
+    id: string;
     likes: number;
-    healthScore: number;
 }
 
-export const RecipeCard = ({ altRecipe, altLikes, altHealth, imgRecipe, imgLikes, imgHealth, title, titleComplement, id, servings, time, likes, healthScore }: Props) => {
+export const RecipeCard = ({ altRecipe, altLikes, altHealth, imgRecipe, imgLikes, imgHealth, title, titleComplement, id, likes }: Props) => {
+
     return (
         <div>
             <div className="container_recipe_image">
@@ -29,14 +27,13 @@ export const RecipeCard = ({ altRecipe, altLikes, altHealth, imgRecipe, imgLikes
                         <span>{title}</span>
                         <span className="title_complement">{titleComplement}</span>
                     </div>
-                    <RecipeCardDetails servings={18} time={500} />
+                    <RecipeCardDetails servings={18} time="55" />
                     <div className="recipe_rating">
                         <div className="recipe_rating__icons">
                             <img src={imgLikes} alt={altLikes} />
                             <span>{likes}</span>
                         </div>
                         <div className="recipe_rating__icons">
-                            <span>{healthScore}</span>
                             <img src={imgHealth} alt={altHealth} />
                         </div>
                     </div>

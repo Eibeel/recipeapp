@@ -4,10 +4,12 @@ import iconChef from '../../assets/icons/ic_chef.svg'
 
 type Props = {
     servings: number;
-    time: number;
+    time: string;
 }
 
 export const RecipeCardDetails = ({ servings, time }: Props) => {
+
+
     return (
         <div id='recipe_info_container'>
             <div className="recipe_info">
