@@ -26,11 +26,11 @@ export const RecipeCard = ({ altRecipe, altLikes, altHealth, imgRecipe, imgLikes
                     <span>{title}</span>
                     <span className="title_complement">{titleComplement}</span>
                 </div>
-                {/* <div className="recipe_info">
+                <div className="recipe_info">
                     <span>{servings}</span>
                     <span>{time}</span>
                     <span>Facil</span>
-                </div> */}
+                </div>
                 <div className="recipe_rating">
                     <div className="recipe_rating__icons">
                         <img src={imgLikes} alt={altLikes} />
