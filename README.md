@@ -11,6 +11,7 @@ Recetas randoms a la mano, que incluye detalles como su tiempo de preparación, 
 - [Redux Toolkit](https://redux-toolkit.js.org/)
 - [Sass](https://sass-lang.com/)
 - [Typescript](https://www.typescriptlang.org/)
+- [Yummly API](https://rapidapi.com/apidojo/api/yummly2/)
 
 ### En el directorio raíz:
 #### `npm start`
