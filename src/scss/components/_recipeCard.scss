@@ -1,131 +1,142 @@
 .cardsRecipes {
-    column-gap: 1.5rem;
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    margin: auto;
-    overflow-x: scroll;
+    overflow-x: auto;
+    overflow-y: hidden;
     width: 100vw;
-    height: fit-content;
-}
-
-.container_recipe_image {
-    display: flex;
-    justify-content: center;
-    width: 11.25rem;
-    z-index: 999;
+    height: auto;
+    margin: 0 auto;
     position: relative;
-    margin: 0 auto -80px;
+    column-gap: 24px;
 }
 
-.recipe_image {
-    height: 106px;
-    width: 110px;
-}
-
-.recipe_container {
+.container {
+    list-style: none;
+    border-radius: 16px;
     background: $bodyCardColor;
-    box-shadow: $shadowCard;
-    margin-top: 2rem;
+    height: 13.75rem;
+    width: 11.25rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    box-shadow: $boxShadow;
+}
+
+.container_recipes {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
-    row-gap: 1.375rem;
-    width: 11.25rem;
-    height: 11.375rem;
-    border-radius: 10px;
-    position: relative;
-    padding: 5.25rem 0.5rem 0.75rem;
-}
-
-.recipe_title {
-    color: $titleComplementColor;
-    font-size: 14px;
-    letter-spacing: -0.4px;
+    justify-content: flex-start;
     text-align: center;
+    height: 100%;
 }
 
-.title_complement {
-    font-family: "MonsterClubhouse";
+.container_recipes__recipe {
+    position: relative;
+    top: -26px;
+    height: 108px;
+    width: 112px;
+    margin: 0 auto;
 }
 
-.recipe_rating {
-    font-size: 17px;
+.container_info {
     display: flex;
-    width: 100%;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    height: 100%;
+    width: 100%;
 }
 
-.recipe_rating__icons {
+.container_info__title {
+    color: $titleComplementColor;
+    font-family: "MonsterClubhouse";
+    font-size: 20px;
+}
+
+.container_info__ratings {
     display: flex;
-    height: 1.5rem;
-    align-items: center;
-    column-gap: 4px;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 8px;
+    width: 100%;
+}
+
+.container_info__ratings_reaction {
+    height: 18px;
+    width: 18px;
+}
+
+.container_info__recipe {
+    display: none;
 }
 
 @media (min-width: 768px) {
-    .cardsRecipes {
-        width: 100vw;
-        padding: 0 3rem;
-        margin: auto;
-        justify-content: flex-start;
-    }
-
-    .container_recipe_image {
-        height: auto;
-        margin: 0 auto -112px;
-    }
-
-    .recipe_image {
-        height: 164px;
-        width: 158px;
-    }
-
-    .recipe_container {
-        row-gap: 2rem;
-        width: 16.625rem;
+    .container {
         height: 16.875rem;
+        width: 16.625rem;
     }
 
-    .recipe_title {
-        color: $titleComplementColor;
-        font-size: 22px;
-        letter-spacing: -0.4px;
+    .container_recipes__recipe {
+        top: -36px;
+        height: 158px;
+        width: 164px;
     }
 
-    .recipe_rating {
-        font-size: 22px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 100%;
+    .container_info__title {
+        font-size: 30px;
+    }
+
+    .container_info__ratings {
+        font-size: 20px;
     }
 }
 
 @media (min-width: 1280px) {
-    #recipes {
-        :hover {
-            justify-content: center;
-            height: 20.125rem;
+    .container {
+        
+        &:hover {
+            height: auto;
 
-            .recipe_title,
-            .recipe_rating {
+            .container_info__title,
+            .container_info__ratings {
                 display: none;
             }
 
-            .recipe_info {
-                display: flex;
+            .container_info__recipe {
+                display: block;
             }
 
-            .container_recipe_image {
-                margin: 0;
+            .container_info {
+                display: none;
+            }
+
+            .container_info__recipe {
+                display: flex;
+                flex-direction: column;
+                padding-bottom: 8px;
+            }
+
+            .container_info__recipe_hover {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .container_info__recipe_img {
+                height: 16px;
+                width: 16px;
+            }
+
+            .container_info__recipe_text {
+                font-family: "MonsterClubhouse";
+                font-size: 17px;
+                color: $titleComplementColor;
+            }
+
+            .container_info_recipe_text_data {
+                font-size: 15px;
+                color: $titleRecipeColor;
             }
         }
-    }
-
-    .recipe_title {
-        font-size: 18px;
     }
 }
