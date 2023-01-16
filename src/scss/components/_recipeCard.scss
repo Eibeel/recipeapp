@@ -6,6 +6,7 @@
     margin: auto;
     overflow-x: scroll;
     width: 100vw;
+    height: fit-content;
 }
 
 .container_recipe_image {
@@ -25,7 +26,7 @@
 .recipe_container {
     background: $bodyCardColor;
     box-shadow: $shadowCard;
-    margin-top: 1rem;
+    margin-top: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -35,13 +36,14 @@
     height: 11.375rem;
     border-radius: 10px;
     position: relative;
-    padding: 5.25rem .5rem .75rem;
+    padding: 5.25rem 0.5rem 0.75rem;
 }
 
 .recipe_title {
     color: $titleComplementColor;
-    font-size: 20px;
+    font-size: 14px;
     letter-spacing: -0.4px;
+    text-align: center;
 }
 
 .title_complement {
@@ -89,12 +91,12 @@
 
     .recipe_title {
         color: $titleComplementColor;
-        font-size: 30px;
+        font-size: 22px;
         letter-spacing: -0.4px;
     }
 
     .recipe_rating {
-        font-size: 26px;
+        font-size: 22px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -116,7 +118,14 @@
             .recipe_info {
                 display: flex;
             }
+
+            .container_recipe_image {
+                margin: 0;
+            }
         }
     }
 
+    .recipe_title {
+        font-size: 18px;
+    }
 }

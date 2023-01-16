@@ -12,7 +12,7 @@ export const NavBar = ({ title, complementTitle }: Props) => {
                 <h1 className="nav__title_container__nav__recipe">{title}</h1>
                 <h1 className="nav__title_container__nav__app">{complementTitle}</h1>
             </div>
-            <img src={iconHome} alt="iconHome" className="iconHome"/>
+            <img src={iconHome} alt="iconHome" className="iconHome" />
             <div className="nav_sections">
                 <span>Home</span>
                 <span>Vegetarianos</span>
