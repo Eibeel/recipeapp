@@ -2,7 +2,7 @@
 
 Recetas randoms a la mano, que incluye detalles como su tiempo de preparación, popularidad, porciones, etc.
 
-- Go! 🚀
+- [Explora aquí!](https://recipearanda.vercel.app/) 🚀
 
 ### Tecnologías utilizadas
 
