@@ -1,7 +1,5 @@
 import axios from "axios";
 
-const apiKey = "303271baffmshe04be575f9b1230p1b24f4jsndb778c3e4876";
-
 const host = "yummly2.p.rapidapi.com";
 
 const options = {
@@ -9,7 +7,7 @@ const options = {
     url: "https://yummly2.p.rapidapi.com/feeds/list",
     params: { limit: "10", start: "15" },
     headers: {
-        "X-RapidAPI-Key": apiKey,
+        "X-RapidAPI-Key": process.env.REACT_APP_API_KEY,
         "X-RapidAPI-Host": host,
     },
 };
